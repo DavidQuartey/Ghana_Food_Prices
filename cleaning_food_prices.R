@@ -82,7 +82,7 @@ food <- rbind(food_2015, food_2016)
 
 View(food)
 
-#Change data into numeric
+# Change data into numeric
 food[,3] <- as.numeric(as.character(food[,3]))
 food[,4] <- as.numeric(as.character(food[,4]))
 food[,5] <- as.numeric(as.character(food[,5]))

@@ -1,4 +1,4 @@
-#For 2016
+# For 2016
 ## Load Libraries
 library(dplyr) ; library(tidyr) ; library(stringr)
 
@@ -117,4 +117,6 @@ food[,31] <- as.numeric(as.character(food[,31]))
 food$town <- gsub("CAPECOAST", "CAPE COAST", food$town) 
 food <- arrange(food, town)
 food$n <- 1:nrow(food)
-write.csv(food, "Ghana_Food_Prices.csv")
+
+## Save dataset in .csv format
+#write.csv(food, "Ghana_Food_Prices.csv")
